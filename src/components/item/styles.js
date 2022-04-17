@@ -8,10 +8,13 @@ const Styles = StyleSheet.create({
         borderRadius: 10,
         padding: 16,
         marginTop: 16,
+        flexDirection: 'row'
     },
     item: {
-        alignSelf: 'center'
-    }
+        marginLeft: 10
+    },
+    icon: {
+    },
 });
 
 export default Styles;

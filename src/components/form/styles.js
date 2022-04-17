@@ -9,7 +9,6 @@ const Styles = StyleSheet.create({
         borderBottomColor: '#ddd'
     },
     form: {
-        flex: 1
     }
 });
 

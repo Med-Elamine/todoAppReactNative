@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Text, View, FlatList } from "react-native";
+import { Text, View, FlatList, Alert } from "react-native";
 import Item from "../item";
 import Form from "../form";
 
@@ -15,12 +15,20 @@ const List = () => {
     }
 
     const addTodo = (text) => {
-        setTodos((prevTodos) => {
-            return [...prevTodos,{
-                text: text,
-                key: Math.random().toString(),
-            }]
-        })
+        if(text.length == 0){
+            Alert.alert('Be Careful', 'The Text Input is Empty',[
+                {
+                    text: 'OK'
+                }
+            ])
+        }else{
+            setTodos((prevTodos) => {
+                return [...prevTodos,{
+                    text: text,
+                    key: Math.random().toString(),
+                }]
+            })
+        }
     }
 
     return (

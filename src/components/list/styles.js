@@ -6,7 +6,7 @@ const Styles = StyleSheet.create({
         flex: 8
     },
     list: {
-        flex: 5
+        flex: 1
     }
 });
 
